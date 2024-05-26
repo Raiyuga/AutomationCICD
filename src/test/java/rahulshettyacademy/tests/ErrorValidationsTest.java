@@ -22,7 +22,7 @@ public class ErrorValidationsTest extends BaseTest {
 		
 		// Logging in E-commerce website with wrong credentials
 		landingPage.loginApplication("Wrongemail@gmail.com", "wrongPassword");
-		Assert.assertEquals("Incorrect email  password.", landingPage.getErrorMessage());
+		Assert.assertEquals("Incorrect email or password.", landingPage.getErrorMessage());
 
 	}
 	
